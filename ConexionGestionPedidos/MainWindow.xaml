@@ -1,0 +1,25 @@
+﻿<Window x:Class="ConexionGestionPedidos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConexionGestionPedidos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="482.8" Width="832"
+        Activated="Window_Activated">
+        
+    <Grid Margin="6,-26,-6.4,26">
+        <Label Content="Clientes" HorizontalAlignment="Left" Margin="68,52,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ListBox Name="ListaClientes" HorizontalAlignment="Left" Height="196" Margin="18,125,0,0" VerticalAlignment="Top" Width="197" RenderTransformOrigin="0.48,0.213" MouseDoubleClick="ListaClientes_MouseDoubleClick"    />
+        <Label Content="Pedidos" HorizontalAlignment="Left" Margin="269,63,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ListBox Name="PedidosClientes" HorizontalAlignment="Left" Height="196" Margin="236,125,0,0" VerticalAlignment="Top" Width="188"/>
+        <ListBox Name="TodosPEdidos" HorizontalAlignment="Left" Height="196" Margin="453,125,0,0" VerticalAlignment="Top" Width="303"/>
+        <Label  Content="Datos" HorizontalAlignment="Left" Margin="581,63,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="546,341,0,0" VerticalAlignment="Top" Width="109" Height="48" Click="Button_Click"/>
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="18,326,0,0" VerticalAlignment="Top" Width="79" Height="48" Click="Button_Click1"/>
+        <Button Content="Borrar" HorizontalAlignment="Left" Margin="122,326,0,0" VerticalAlignment="Top" Width="93" Height="48" Click="Button_Click2"/>
+        <TextBox Name="InsertaCLiente" HorizontalAlignment="Left" Height="23" Margin="18,387,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Actualizar" HorizontalAlignment="Left" Margin="236,326,0,0" VerticalAlignment="Top" Width="188" Height="48" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
